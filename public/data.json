@@ -1,0 +1,12 @@
+[{
+    "id":"1",
+    "name":"Yalm",
+    "target":"http://www.yalm.cn",
+    "requiredItems": "pc"
+},
+{
+    "id":"2",
+    "name":"Yalm2",
+    "target":"http://www.yalm2.cn",
+    "requiredItems": "computer"
+}]

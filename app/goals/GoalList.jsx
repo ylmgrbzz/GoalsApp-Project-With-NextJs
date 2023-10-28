@@ -1,0 +1,31 @@
+import Link from "next/link";
+import React from "react";
+
+const GoalList = ({ goals }) => {
+  console.log(goals);
+  return (
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        height: "100%",
+      }}
+    >
+      {goals.map((goal) => (
+        <Link href={`/goals/${goal?.id}`} key={goal?.id}>
+          <div
+            style={{
+              padding: "10px",
+              margin: "10px",
+              borderRadius: "10px",
+            }}
+          >
+            {goal?.name}
+          </div>
+        </Link>
+      ))}
+    </div>
+  );
+};
+
+export default GoalList;
