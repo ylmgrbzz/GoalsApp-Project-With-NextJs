@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
-const GoalsPage = () => {
-  return (
-    <div>
-      select goals page
-    </div>
-  )
-}
+const GoalsPage = async () => {
+  return <div>select any goals </div>;
+};
 
-export default GoalsPage
+export default GoalsPage;
