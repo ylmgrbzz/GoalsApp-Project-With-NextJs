@@ -7,12 +7,14 @@ async function fetchGoals(id) {
 }
 
 const GoalDetails = async ({ params }) => {
+    const goal = await fetchGoals(params.id);
+  console.log(goal);
   console.log(params.id);
-  const goal = await fetchGoals(params.id);
   return (
     <div>
       <h1>{goal?.name}</h1>
       <p>{goal?.target}</p>
+      <p>{goal?.requiredItems}</p>
     </div>
   );
 };
